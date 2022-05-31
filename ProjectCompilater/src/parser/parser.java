@@ -88,9 +88,9 @@ public class parser {
             return;
           case Tag.IF:
             match(Tag.IF);
-            match('(');
+            match('{');
             bool();
-            match(')');
+            match('}');
             stmt();
             if (look.tag != Tag.ELSE) {
               return;
@@ -101,18 +101,18 @@ public class parser {
             
           case Tag.WHILE:
             match(Tag.WHILE);
-            match('(');
+            match('{');
             bool();
-            match(')');
+            match('}');
             stmt();
               return;
           case Tag.DO:
             match(Tag.DO);
             stmt();
             match(Tag.WHILE);
-            match('(');
+            match('{');
             bool();
-            match(')');
+            match('}');
             match(';');
             return;
           case Tag.BREAK:

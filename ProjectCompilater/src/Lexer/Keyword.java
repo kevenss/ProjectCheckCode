@@ -22,6 +22,7 @@ public class Keyword extends Token {
           BREAK = new Keyword("break", Tag.BREAK),
           DO = new Keyword("do", Tag.BREAK),
           WHILE = new Keyword("while", Tag.BREAK),
-          MINUS = new Keyword("minus", Tag.BREAK);
+          MINUS = new Keyword("minus", Tag.BREAK),
+          FOR = new Keyword("for", Tag.BREAK);
   }
 
